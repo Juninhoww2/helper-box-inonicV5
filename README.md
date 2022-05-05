@@ -56,7 +56,7 @@ em seguida siga os trechos de código abaixo no seu terminal: </p>
  
  ```bash
 # Clonar o repositório
-$ git clone https://github.com/matheusmarks/helper-box-ionic
+$ git clone https://github.com/juninhoww2/helper-box-ionicV5
 
 # Ir para a pasta do projeto
 $ cd helper-box-ionic
