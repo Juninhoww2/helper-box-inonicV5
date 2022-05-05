@@ -1,0 +1,8 @@
+{
+  "name": "helperbox",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,112 @@
+
+#content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #312E38 58.85%, #1B1B1B 100%);
+}
+
+#content .login-content {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .brand-name {
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: Inter, Arial, sans-serif;
+        font-weight: 700;
+        color: #f0f0f1;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        ion-item {
+            margin-bottom: 5px;
+            width: 80%;
+            --background: #444;
+            
+            ion-input {
+                height: 50px;
+                --color: #f0f0f1;
+            }
+        }
+       
+    }
+
+    form ion-item ion-label{
+        font-size: 1rem;
+    }
+
+    form .login-button {
+        width: 80%;
+        font-family: Inter, Arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: none;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+        height: 50px;
+        --background: var(--ion-color-primary-shade);
+    }
+
+    .additional-text {
+        font-family: Poppins, Arial, sans-serif;
+    }
+
+    .optional-login-buttons {
+        width: 80%;
+        display: flex;
+
+        .google-button {
+            --background: var(--ion-color-danger-shade);
+            width: 80%;
+            font-family: Poppins, Arial, sans-serif;
+           
+
+            ion-icon {
+                margin-right: 5px;
+                font-weight: bold;
+            }
+        }
+
+        .facebook-button {
+            --background: var(--ion-color-primary-shade);
+            width: 80%;
+            font-family: Poppins, Arial, sans-serif;
+            
+
+            ion-icon {
+                margin-right: 5px;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .signup-text {
+        font-family: Poppins, Arial, sans-serif;
+
+        .signup-link {
+            text-decoration: none;
+            color: #f0f0f1;
+        } 
+    }
+
+    a {
+        text-decoration: none;
+        color: #f0f0f1;
+        font-family: Poppins, Arial, sans-serif;
+    }
+}
+

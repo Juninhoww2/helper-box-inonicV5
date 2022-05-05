@@ -1,0 +1,48 @@
+<ion-content>
+  <div id="content">
+    <div class="login-content">
+
+      <p class="brand-name">Helper Box <ion-icon name="cube-outline"></ion-icon>
+      </p>
+
+      <form #formData="ngForm" (ngSubmit)="userLogin(formData.value)">
+        <ion-item>
+          <ion-label>
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-label>
+          <ion-input name="email" placeholder="Login" ngModel></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </ion-label>
+          <ion-input type="password" name="password" ngModel placeholder="Senha"></ion-input>
+        </ion-item>
+        <ion-button type="submit" class="login-button">
+          Entrar
+        </ion-button>
+      </form>
+
+
+      <p class="additional-text">Ou faça login com</p>
+
+      <div class="optional-login-buttons">
+        <ion-button class="google-button" (click)="userLoginGoogle()" (tap)="userLoginGoogle()">
+          <ion-icon name="logo-google"></ion-icon>
+          Google
+        </ion-button>
+
+        <ion-button class="facebook-button" (click)="loginFacebook()" (tap)="loginFacebook()">
+          <ion-icon name="logo-facebook"></ion-icon>
+          Facebook
+        </ion-button>
+      </div>
+
+      <p class="signup-text">
+        Não possui uma conta ?
+        <strong><a routerLink="/register" class="signup-link"> Criar conta</a></strong>
+      </p>
+
+    </div>
+  </div>
+</ion-content>
